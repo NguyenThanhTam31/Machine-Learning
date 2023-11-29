@@ -66,7 +66,7 @@ def error(y,y_pred):
     sum=0
     for i in range(0,len(y)):
         sum = sum+abs(y[i]-y_pred[i])
-    return sum/len(y)
+    return sum/len(y) #tra ve trung binh
 
 k=5
 kf = KFold(n_splits=k, random_state=None)
